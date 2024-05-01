@@ -1,10 +1,12 @@
-export interface InsurancePolicy {
-    policyId: number;
-    policyNumber: string;
-    policyType: string;
-    premiumAmount: number;
-    startDate: Date;
-    endDate: Date;
-    isActive: boolean;
-    customerId: number;
+export class InsurancePolicy {
+    constructor(
+        public policyId: number,
+        public policyNumber: string,
+        public policyType: string,
+        public premiumAmount: number,
+        public startDate: Date,
+        public endDate: Date,
+        public isActive: boolean,
+        public customerId: number
+    ) {}
 }
